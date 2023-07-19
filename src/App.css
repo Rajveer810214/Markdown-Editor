@@ -1,38 +1,85 @@
-.App {
+.control-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  color: #333;
+  margin-right: 5px;
+}
+.presentation-slider {
+  width: 100%;
+  word-wrap: break-word;
+  color: white;
+  min-height: 200px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.presentation-slider .slick-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  list-style: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.presentation-slider .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.presentation-slider .slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.presentation-slider .slick-dots li.slick-active button {
+  opacity: 1;
+}
+.slick-list{
+  height: 300vh;
+}
+.front p, .front button, a{
+  font-size: 22px;
+}
+.front img{
+  height: 400px;
+}
+.front{
+  height: 100vh;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .headings{
+    font-size: 16px;
   }
-}
+  .container h1{
+    font-size: 20px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .front h1{
+    font-size: 22px;
+
+  }
+  .front p, .front button, a{
+    font-size: 16px;
+  }
+  .front img{
+    height: 200px;
   }
 }
